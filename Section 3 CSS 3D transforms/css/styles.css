@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    perspective: 1000px;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    color: white;
+    margin-inline: auto;
+    margin-block: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 1s;
+}
+.box:hover {
+    transform: translateZ(300px);
+}
+.sqare {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    color: white;
+    margin-inline: auto;
+    margin-block: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 1s;
+}
+.sqare:hover {
+    transform: rotateZ(180deg);
+    transform: rotateX(180deg);
+
+}
