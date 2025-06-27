@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-*
-{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-  	font-family: 'Poppins', sans-serif;
+  	font-family: 'Arial', sans-serif;
 }
-section
-{
+
+section {
 	position: relative;
 	width: 100%;
 	height: 100vh;
@@ -15,10 +13,10 @@ section
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: url(bg.jpg);
+	background: url(../img/bg.jpg);
 }
-h2
-{
+
+h2 {
 	position: relative;
 	color: #fff;
 	font-size: 12em;
@@ -28,13 +26,13 @@ h2
 	z-index: 2;
 	transition: 2s;
 }
-h2:hover
-{
+
+h2:hover {
 	filter: blur(10px);
 	transform: scale(1.2);
 }
-img
-{
+
+img {
 	position: absolute;
 	top: -20%;
 	left: -20%;
@@ -44,8 +42,8 @@ img
 	filter: blur(10px);
 	transition: 2s;
 }
-h2:hover ~ img
-{
+
+h2:hover ~ img {
 	top: 0%;
 	left: 0%;
 	width: 100%;
