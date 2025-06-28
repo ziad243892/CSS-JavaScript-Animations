@@ -266,3 +266,53 @@ li {
   transform: rotate(90deg) translateY(10px);
   transition-delay: 1.5s;
 }
+
+h4 {
+	position: relative;
+	display: flex;
+	gap: 15px;
+	color: #fff;
+	font-size: 3em;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+h4 span {
+	position: relative;
+	filter: blur(5px);
+	transition: 0.5s;
+}
+
+h4 span:hover {
+	filter: blur(0);
+	transition: 0s;
+}
+
+h4 span i:before {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 8px;
+	background: #fff;
+	top: 0;
+	left: -5px;
+	box-shadow: 0 53px #fff, 37px 53px #fff, 36px 0 #fff;
+	opacity: 0;
+}
+
+h4 span i:after {
+	content: "";
+	position: absolute;
+	width: 8px;
+	height: 2px;
+	background: #fff;
+	top: 0;
+	left: -5px;
+	box-shadow: 0 60px #fff, 30px 60px #fff, 30px 0 #fff;
+	opacity: 0;
+}
+
+h4 span:hover i:before,
+h4 span:hover i:after {
+	opacity: 1;
+}
