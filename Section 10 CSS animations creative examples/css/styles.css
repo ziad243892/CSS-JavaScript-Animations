@@ -3,3 +3,81 @@ body {
     padding: 2em;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+hr {
+    margin: 2em 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.coming-soon {
+	text-align: center;
+	color: #555879;
+	font-size: 90px;
+	line-height: 90px;
+	letter-spacing: 15px;
+	text-shadow: 0 1px 0 #efefef, 0 2px 0 #efefef, 0 3px 0 #efefef, 0 4px 0 #efefef, 0 30px 5px rgba(0,0,0,.1);
+	animation: float 3s linear infinite;
+	animation-direction: alternate;
+}
+
+@keyframes float {
+	from { transform: rotate(5deg); }
+	to { transform: rotate(-5deg); }
+}
+
+.loading {
+	width: 100px;
+	height: 100px;
+	background-color: #89CFF0;
+	border-radius: 12px;
+	animation: loading 2s linear infinite;
+    margin-inline: auto;
+}
+
+@keyframes loading {
+	0% { transform: rotateX(0deg) rotateY(0deg); }
+	50% { transform: rotateX(0deg) rotateY(180deg); }
+	100% { transform: rotateX(180deg) rotateY(180deg); }
+}
+
+.love-css {
+	color: #98A1BC;
+	font-size: 50px;
+    text-align: center;
+}
+
+.love-css span:before {
+	content: 'TRANSITIONS';
+	text-transform: uppercase;
+	font-family: arial;
+	color: #1B1464;
+	animation: word-switch 5s infinite;
+}
+
+@keyframes word-switch {
+	0% { content: 'transitions' }
+	50% { content: 'animations' }
+	100% { content: 'transforms' }
+}
+
+.hover-me {
+	text-decoration: none;
+	color: #3674B5;
+	font-size: 26px;
+	border: 3px solid #3674B5;
+	padding: 20px 40px;
+	transition: all 0.3s;
+}
+
+.hover-me:hover {
+	border: 3px solid #578FCA;
+	color: #578FCA;
+	animation: shake 0.3s;
+}
+
+@keyframes shake {
+	33% { transform: rotate(10deg); }
+	66% { transform: rotate(-10deg); }
+	100% { transform: rotate(10deg); }
+}
